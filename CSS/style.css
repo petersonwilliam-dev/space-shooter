@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+body{
+    background: url("../img/background.jpg");
+    background-size: cover;
+}
+#NaveJogador{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background: url(../img/nave.png);
+    background-repeat: no-repeat;
+}
+.tiroJogador{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: url(../img/bola-energia.png);
+}
+#BotaoJogar{
+    background: none;
+    border: 3px solid white;
+    font-size: 30pt;
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    transition: .5s;
+}
+#BotaoJogar:hover{
+    background: white;
+    color: black;
+    padding: 50px;
+}
+#tela-inicial .row{
+    height: 50vh;
+    align-items: center;
+}
+#tela-inicial h1 {
+    font-size: 40pt;
+    font-weight: bold;
+}
+#TelaJogo{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+}
+.barraVida{
+    border: 5px solid white;
+    border-radius: 50px;
+}
+.vidaJogador{
+    z-index: 1;
+    position: absolute;
+    width: 330px;
+    padding: 15px;
+    bottom: 0;
+
+    margin: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+#barra_de_vida{
+    width: 300px;
+    height: 30px;
+    background: #1ed760;
+    border-radius: 50px;
+}
+.monstro{
+    position: absolute;
+    width: 50px;
+    height: 37px;
+    background: url(../img/alien.png);
+}
+.tiro_monstro{
+    width: 20px;
+    height: 20px;
+    background: url(../img/bolaInimiga.png);
+    position: absolute;
+}
+.explosao{
+    position: absolute;
+}
+
+#TelaResultado{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+#TelaResultado .row{
+    height: 50vh;
+    align-items: center;
+}
+#BotaoReiniciar{
+    background: none;
+    border: 3px solid white;
+    font-size: 30pt;
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    transition: .5s;
+}
+#BotaoReiniciar:hover{
+    background: white;
+    color: black;
+    padding: 50px;
+}
